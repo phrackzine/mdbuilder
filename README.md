@@ -49,7 +49,7 @@ Here is a code block which we like to syntax highlight:
 
 We inserted the code block between the </PRE> .. <PRE>.
 
-Here is an sentencer with a LINK (we have to exit the PRE-block first):
+An example with a LINK within a sentence (we have to exit the PRE-block first):
 </PRE>
 A page is a physical region of memory that can be mapped to one or more
 [virtual addresses](https://wiki.osdev.org/Paging). These mappings have several flags that determine
