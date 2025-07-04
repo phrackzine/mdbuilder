@@ -23,7 +23,8 @@ View your article: [http://localhost:8080](http://localhost:8080).
 Open your favorite editor and add Markdown tags to your `article.md`.
 * You may need to convert some `&lt;` and `&amp;` back to `<` and `&`.
 * You have to use `</PRE>` before using any markdown syntax.
-* Don't forget to add `<PRE>` after you are done with our Markdown syntax.
+* Don't forget to add `<PRE>` after you are done using Markdown syntax.
+* All availbe Markdowns: [https://pygments.org/languages/](https://pygments.org/languages/).
 
 Example `article.md`:
 ````txt
