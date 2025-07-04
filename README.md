@@ -27,7 +27,7 @@ Open your favorite editor and add Markdown tags to your `article.md`.
 * All availbe Markdowns: [https://pygments.org/languages/](https://pygments.org/languages/).
 
 Example `article.md`:
-````txt
+````md
 ---
 title: A
 author: B
