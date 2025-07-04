@@ -2,9 +2,9 @@
 
 This is used by PHRACK authors to convert their PHRACK ASCII article to Markdown.
 
-Markdown allows code syntax highliting and other formatting tricks.
+Markdown allows code syntax highlighting and other beauties.
 
-Please use this setup before submitting the Markdown version of your article to Phrack Staff.
+Please use this setup to verify that your Markdown article looks awesome before submitting to Phrack Staff.
 
 ---
 
