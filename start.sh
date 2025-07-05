@@ -47,7 +47,7 @@ Example 2 - A Reference section:${CDY}
 
 python3 ./Makemd.py
 
-echo ">>> View your article at ${CB}${CUL}http://localhost:8080${CN}"
+echo -e ">>> View your article at ${CB}${CUL}http://localhost:8080${CN}"
 while :; do
 	sleep 5
 	inotifywait issues/0/0.md -e MODIFY,DELETE_SELF || continue
