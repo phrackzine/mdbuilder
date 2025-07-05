@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM alpine
 
 ############################################################################
 # If you are an AUTHOR then you are wrong here. You NEVER EVER
@@ -13,7 +13,7 @@ ARG WWWSRC=phrack.org
 
 # docker build -t phrack.org-mdbuilder .
 # docker run --rm --name phrack -p8080:80 -v$(pwd):/src:ro -it phrack.org-mdbuilder
-# http://localhost:8080/issues/0/0.html
+# http://localhost:8080
 
 WORKDIR /phrack.org
 
@@ -29,19 +29,15 @@ author: AuthorSetLater
 ---
 EOF
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
+RUN apk add --no-cache \
         bash \
         inotify-tools \
         nginx \
         python3 \
-        python3-markdown \
-        python3-pygments \
-        vim \
-    && apt-get clean autoclean \
-    && apt-get autoremove -y \
-    && rm -rf /var/lib/{apt,dpkg,cache,log}
-
+        py3-markdown \
+        py3-pygments \
+        vim 
+    
 COPY ${WWWSRC}/templates/default.html ${WWWSRC}/templates/issue.html ${WWWSRC}/templates/tocitem.html ./templates/
 COPY ${WWWSRC}/Makemd.py .
 COPY ${WWWSRC}/images _site/images

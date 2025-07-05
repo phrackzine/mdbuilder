@@ -9,7 +9,7 @@ CDC="\e[0;36m" # cyan
 CUL="\e[4m"
 CN="\e[0m"    # none
 
-[ ! -f issues/0/0.md ] && {
+[ ! -f /src/article.md ] && {
 	echo -e >&2 "${CDR}ERROR:${CN} Not found: article.md
 Please make sure that your current working directory contains your article
 and is named ${CDC}article.md${CN}.
@@ -27,5 +27,6 @@ while :; do
 	inotifywait issues/0/0.md -e MODIFY,DELETE_SELF || continue
 	sleep 1
 	python3 ./Makemd.py
+	echo -e "[$(date)] View your article at ${CB}${CUL}http://localhost:8080${CN}"
 done
 
