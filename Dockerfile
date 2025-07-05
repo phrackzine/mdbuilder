@@ -12,7 +12,7 @@ FROM ubuntu
 ARG WWWSRC=phrack.org
 
 # docker build -t phrack.org-mdbuilder .
-# docker run --rm --name phrack -p8080:80 -v$(pwd):/src:ro -it phrack-mdbuilder
+# docker run --rm --name phrack -p8080:80 -v$(pwd):/src:ro -it phrack.org-mdbuilder
 # http://localhost:8080/issues/0/0.html
 
 WORKDIR /phrack.org

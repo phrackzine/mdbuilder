@@ -14,34 +14,8 @@ CN="\e[0m"    # none
 Please make sure that your current working directory contains your article
 and is named ${CDC}article.md${CN}.
 
-Your ${CDC}article.md${CN} must be of this format:${CDY}
----
-title: A
-author: B
----
-<PRE>${CN}
-...your .TXT article here.
-${CDY}</PRE>${CN}
-
-Tips:
-- Convert all < to &lt; and all & to &amp;
-- Exit the PRE-block when you like to use Markdown:
-Example 1 - To use a python code block, use:${CDY}
-</PRE>
-\`\`\`python
-...Your code here
-\`\`\`
-<PRE>${CN}
-
-Example 2 - A Reference section:${CDY}
-</PRE>
-0. [THC](https://www.thc.org)
-
-1. [phrack homepage](https://www.phrack.org)
-
-1. [Google](https://www.google.com)
-<PRE>${CN}
-"
+Example articles:
+${CB}${CUL}https://github.com/phrackzine/mdbuilder/tree/main/examples${CN}"
 	exit 255
 }
 
