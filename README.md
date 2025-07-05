@@ -18,9 +18,10 @@ Please use this container to verify that your Markdown article looks awesome bef
 ---
 
 ### Usage:
+1. Copy your `artile.txt` to `article.md` and add a `<PRE>` a the beginning.
 1. Make sure your article is named `article.md`
-2. Start the container: `docker run --rm -p8080:80 -v $(pwd):/src -it phrackzine/mdbuilder`
-3. View your rendered article at [http://localhost:8080](http://localhost:8080)
+1. Start the container: `docker run --rm -p8080:80 -v $(pwd):/src -it phrackzine/mdbuilder`
+1. View your rendered article at [http://localhost:8080](http://localhost:8080)
 ---
 
 ### Markdown Tips
