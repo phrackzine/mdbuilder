@@ -21,7 +21,8 @@ ${CB}${CUL}https://github.com/phrackzine/mdbuilder/tree/main/examples${CN}"
 
 python3 ./Makemd.py
 
-echo -e ">>> View your article at ${CB}${CUL}http://localhost:8080${CN}"
+echo -e ">>> View your article at ${CB}${CUL}http://localhost:8080${CN}."
+echo "Keep editing your article.md file. The HTML will be updated automatically."
 while :; do
 	sleep 5
 	inotifywait issues/0/0.md -e MODIFY,DELETE_SELF || continue

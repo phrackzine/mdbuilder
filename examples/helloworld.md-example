@@ -6,6 +6,9 @@ author: B
 |=----------------------[ Phrack Hello World ]=--------------------------=|
                            This is centered
 
+Rename this file to article.md and start:
+docker run --rm -p8080:80 -v $(pwd):/src -it phrackzine/mdbuilder
+
 --[ Phrack Hello World
 
 This is ascii text from my article. Markdown tags don't work here because
@@ -45,9 +48,9 @@ All links will go into one large block (the entire block is after &lt;/PRE>).
 Enumartion starts with 0.
 
 </PRE>
-0. [https://github.com/gin-gonic/gin](https://github.com/gin-gonic/gin)
-1. [https://github.com/jackc/pgx](https://github.com/jackc/pgx)
-1. [https://github.com/jackc/pgx/issues/1090](https://github.com/jackc/pgx/issues/1090)
+0. [Gin-Gonix](https://github.com/gin-gonic/gin)
+1. <https://github.com/jackc/pgx>
+1. <https://github.com/jackc/pgx/issues/1090>
 <PRE>
 
 --[ 7. Source Code
@@ -59,6 +62,12 @@ Enumartion starts with 0.
 </PRE>
 * _Remove uuencode/base64_
 * _Send us a tar-ball instead_
+<PRE>
+
+--[ 8. Images
+
+</PRE>
+![Phrack Gnome](https://phrack.org/images/gnome.png)
 <PRE>
 
 |=[ EOF ]=---------------------------------------------------------------=|
