@@ -22,6 +22,7 @@ Please use this container to verify that your Markdown article looks awesome bef
 1. Make sure your article is named `article.md`
 1. Start the container: `docker run --rm -p8080:80 -v $(pwd):/src -it phrackzine/mdbuilder`
 1. View your rendered article at [http://localhost:8080](http://localhost:8080)
+1. Create a PR at [phrackzine/articles](https://github.com/phrackzine/articles) for your Markdown article. 
 ---
 
 ### Markdown Tips
