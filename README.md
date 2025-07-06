@@ -31,7 +31,8 @@ Open your favorite editor and add Markdown tags to your `article.md`.
 * You may need to convert some `&lt;` and `&amp;` back to `<` and `&`.
 * Keep most of the article inside a `<PRE>`-block. Use `</PRE>` before using any markdown syntax.
 * Don't forget to add `<PRE>` after you are done using Markdown syntax.
-* All availbe Markdowns: [https://pygments.org/languages/](https://pygments.org/languages/).
+* All available Markdowns: [https://daringfireball.net/projects/markdown/syntax](https://daringfireball.net/projects/markdown/syntax)
+* All available Syntax Highlights [https://pygments.org/languages/](https://pygments.org/languages/).
 
 See the [examples](examples/) to get you started.
 
