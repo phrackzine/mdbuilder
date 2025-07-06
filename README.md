@@ -1,39 +1,16 @@
-# Create and edit a PHRACK article with Markdown
+# Phrack Markdown Test Render Engine for authors
 
 ---
 
-NOTE: You **never** need to checkout or build this repository. Use the pre-build docker image from DockerHub instead:
+### YOU ARE MOST LIKELY WRONG HERE.
+
+Best go to <https://github.com/phrackzine/articles>
+
+---
+
+This repo contains the container engine to render articles for testing. It's pushed to DockerHub and started like so:
+
 ```shell
-docker run --rm -p8080:80 -v $(pwd):/src -it phrackzine/mdbuilder
+docker run --rm -p8080:80 -v"$(pwd):/src" -it phrackzine/mdbuilder
 ```
-
----
-
-The container is used by PHRACK authors to convert their PHRACK ASCII article into Markdown and view them rendered at `http://localhost:8080`.
-
-Markdown allows code syntax highlighting and other beauties.
-
-Please use this container to verify that your Markdown article looks awesome before submitting it to Phrack Staff.
-
----
-
-### Usage:
-1. Copy your `artile.txt` to `article.md` and add a `<PRE>` a the beginning.
-1. Make sure your article is named `article.md`
-1. Start the container: `docker run --rm -p8080:80 -v $(pwd):/src -it phrackzine/mdbuilder`
-1. View your rendered article at [http://localhost:8080](http://localhost:8080)
-1. Create a PR at [phrackzine/articles](https://github.com/phrackzine/articles) for your Markdown article. 
----
-
-### Markdown Tips
-
-Open your favorite editor and add Markdown tags to your `article.md`.
-* You may need to convert some `&lt;` and `&amp;` back to `<` and `&`.
-* Keep most of the article inside a `<PRE>`-block. Use `</PRE>` before using any markdown syntax.
-* Don't forget to add `<PRE>` after you are done using Markdown syntax.
-* All available Markdowns: [https://daringfireball.net/projects/markdown/syntax](https://daringfireball.net/projects/markdown/syntax)
-* All available Syntax Highlights [https://pygments.org/languages/](https://pygments.org/languages/).
-
-See the [examples](examples/) to get you started.
-
 
