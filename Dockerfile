@@ -22,6 +22,7 @@ RUN mkdir -p templates _site/issues/0 \
     && ln -s /src/article.md issues/0/0.md \
     && ln -s issues/0/0_md.html _site/index.html \
     && ln -s . _site/md \
+    && ln -s /src/dl _site/dl \
     && cat >issues/0/meta.md <<"EOF"
 ---
 date: 1970-13-13
