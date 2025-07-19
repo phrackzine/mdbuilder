@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# nginx -c /config/nginx.conf
+nginx -c /config/nginx.conf
 
 CB="\e[1;34m" # blue
 CDR="\e[0;31m" # red
