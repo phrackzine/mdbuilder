@@ -11,8 +11,8 @@ FROM alpine
 # Location of the phrack.org web source code (css files etc)
 ARG WWWSRC=phrack.org
 
-# docker build -t phrack.org-mdbuilder .
-# docker run --rm --name phrack -p8080:80 -v$(pwd):/src:ro -it phrack.org-mdbuilder
+# docker build -t phrackzine/mdbuilder .
+# docker run --rm --name phrack -p8080:80 -v$(pwd):/src:ro -it phrackzine/mdbuilder
 # http://localhost:8080
 
 WORKDIR /phrack.org
