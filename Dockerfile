@@ -37,6 +37,7 @@ RUN apk add --no-cache \
         python3 \
         py3-markdown \
         py3-pygments \
+	py3-pymdown-extensions \
         vim 
     
 COPY ${WWWSRC}/templates/default.html ${WWWSRC}/templates/issue.html ${WWWSRC}/templates/tocitem.html ./templates/
